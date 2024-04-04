@@ -1,18 +1,3 @@
-<!--
-**fuadhasanshihab/fuadhasanshihab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
 <a name="readme-top"></a>
 <!-- PROJECT LOGO -->
 <div align="center">
@@ -32,16 +17,7 @@ Here are some ideas to get you started:
 
 
 
-<!-- TABLE OF CONTENTS
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#follow-me-on">Follow Me On</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#pages">Pages</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details> -->
+
 
 <!-- Icon - https://gist.github.com/cxmeel/0dbc95191f239b631c3874f4ccf114e2 -->
 <div align="center">
@@ -62,36 +38,16 @@ Here are some ideas to get you started:
 </a>
 </div>
 
-
-<!-- Service -->
-## Services
-
-- [x] Typography
-- [x] Brand Identity Design
-- [x] Website Development
-- [x] Poster Design
-- [x] Calligraphy
-    
-
-<!-- PROJECT LOGO -->
-## Pages
-   • <a href="https://fuadhasanshihab.blogspot.com/search/Label/Resources">Graphic Design Resources</a><br/>
-   • <a href="https://fuadhasanshihab.blogspot.com/search/Label/Resources/#bangla-font">Bangla Font</a><br/>
-   • <a href="https://fuadhasanshihab.blogspot.com/search/Label/Resources/#enhlish-font">English Font</a><br/>
-   • <a href="https://fuadhasanshihab.blogspot.com/p/tools.html">Design Tools</a><br/>
-   • <a href="https://fuadhasanshihab.blogspot.com/search/Label/Blog">Blog</a><br/>
-   • <a href="https://fuadhasanshihab.blogspot.com/2023/10/qna.html">QNA Forum</a>
-
-
 <!-- CONTACT -->
-## Contact
-Email:
-contact.shihab1246@gmail.com
+<hr>
+© 2018 - 2024 Fuad Hasan Shihab.
+For any inquiries:
+<a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>a>
 <!--
 FB Messenger: [m.me/fuadhasan.shihab](https://m.me/fuadhasan.shihab/)
 -->
 
-<br/>
-<p align="right"><a href="#readme-top">🔝</a></p>
+<br/><br/>
+<h1 align="right"><a href="#readme-top">🔝</a></h1>
 
 <!-- Copyright 2024 Fuad Hasan Shihab -->
