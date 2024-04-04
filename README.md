@@ -57,6 +57,8 @@ FB Messenger: [m.me/fuadhasan.shihab](https://m.me/fuadhasan.shihab/)
     font-family: "Space Mono", monospace!important;
     font-weight: 400;
     font-style: normal;
+    font-size:14px!important;
+    letter-spacing: 1.3!important;
   }
   .about{max-width:500px;}
 </style>
