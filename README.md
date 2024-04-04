@@ -1,8 +1,3 @@
-<script>
-    window.location.href = "/index.html";
-</script>
-
-
 <div align="left">
   <a href="https://github.com/fuadhasanshihab">
      <img src="https://raw.githubusercontent.com/fuadhasanshihab/img/main/footer-fuadhasanshihab.svg" alt="Logo" width="180px">
