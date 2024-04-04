@@ -1,6 +1,6 @@
 <div align="left">
   <a href="https://github.com/fuadhasanshihab">
-     <img src="https://raw.githubusercontent.com/fuadhasanshihab/img/main/footer-fuadhasanshihab.svg" alt="Logo" width="60%">
+     <img src="https://raw.githubusercontent.com/fuadhasanshihab/img/main/footer-fuadhasanshihab.svg" alt="Logo" width="200px">
   </a>
   <!--
   <h1 align="center">Fuad Hasan Shihab</h1>
@@ -35,7 +35,7 @@
 <!-- CONTACT -->
 <br/><br/>
 <hr/>
-© 2018 - <script>document.write(new Date().getFullYear())</script>Fuad Hasan Shihab.<br>
+© 2018 - <script>document.write(new Date().getFullYear())</script> Fuad Hasan Shihab.<br>
 For any inquiries:
 <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
 <!--
@@ -45,5 +45,5 @@ FB Messenger: [m.me/fuadhasan.shihab](https://m.me/fuadhasan.shihab/)
 <style>
   h1{display:none!important;}
   body{margin:32px!important;}
-  .about{max-width:1080px;}
+  .about{max-width:700px;}
 </style>
