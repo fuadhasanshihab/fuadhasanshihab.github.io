@@ -1,6 +1,3 @@
-<style>
-  h1{display:none!important;}
-</style>
 <div align="left">
   <a href="https://github.com/fuadhasanshihab">
      <img src="https://raw.githubusercontent.com/fuadhasanshihab/img/main/footer-fuadhasanshihab.svg" alt="Logo" width="60%">
@@ -44,3 +41,8 @@ For any inquiries:
 <!--
 FB Messenger: [m.me/fuadhasan.shihab](https://m.me/fuadhasan.shihab/)
 -->
+
+<style>
+  h1{display:none!important;}
+  body{margin:48px!important;}
+</style>
