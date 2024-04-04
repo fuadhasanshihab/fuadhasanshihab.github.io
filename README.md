@@ -42,12 +42,12 @@
 <hr>
 © 2018 - 2024 Fuad Hasan Shihab.
 For any inquiries:
-<a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>a>
+<a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
 <!--
 FB Messenger: [m.me/fuadhasan.shihab](https://m.me/fuadhasan.shihab/)
 -->
 
 <br/><br/>
-<h1 align="right"><a href="#readme-top">🔝</a></h1>
+<h2 align="right"><a href="#readme-top">🔝</a></h2>
 
 <!-- Copyright 2024 Fuad Hasan Shihab -->
