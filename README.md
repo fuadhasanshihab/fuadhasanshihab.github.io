@@ -1,5 +1,6 @@
-<a name="readme-top"></a>
-<!-- PROJECT LOGO -->
+<style>
+  h1{display:none!important;}
+</style>
 <div align="left">
   <a href="https://github.com/fuadhasanshihab">
      <img src="https://raw.githubusercontent.com/fuadhasanshihab/img/main/footer-fuadhasanshihab.svg" alt="Logo" width="60%">
