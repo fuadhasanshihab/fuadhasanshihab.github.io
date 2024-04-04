@@ -39,7 +39,7 @@
 </div>
 
 <!-- CONTACT -->
-<hr>
+<br/><br/><hr>
 © 2018 - 2024 Fuad Hasan Shihab.
 For any inquiries:
 <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
