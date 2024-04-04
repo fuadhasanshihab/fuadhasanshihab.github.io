@@ -5,7 +5,7 @@
   <!--
   <h1 align="center">Fuad Hasan Shihab</h1>
   -->
-  <p align="left">
+  <p class="about" align="left">
     I'm a graphic designer from Bangladesh with an interest in web development, specializing in Typography and Brand Identity Design. With over 5 years of experience, I aim to bring creativity and professionalism to each project. I also share my knowledge through tutorials on YouTube. Having an understanding of HTML, CSS, and JavaScript, I can develop and design websites. I'm committed to delivering quality work tailored to my clients' needs.
     <br /><br/>
     <a href="https://fuadhasanshihab.blogspot.com"><strong>Visit Portfolio »</strong></a>
@@ -35,7 +35,7 @@
 <!-- CONTACT -->
 <br/><br/>
 <hr/>
-© 2018 - 2024 Fuad Hasan Shihab.
+© 2018 - <script>document.write(new Date().getFullYear())</script>Fuad Hasan Shihab.<br>
 For any inquiries:
 <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
 <!--
@@ -44,5 +44,6 @@ FB Messenger: [m.me/fuadhasan.shihab](https://m.me/fuadhasan.shihab/)
 
 <style>
   h1{display:none!important;}
-  body{margin:48px!important;}
+  body{margin:32px!important;}
+  .about{max-width:1080px;}
 </style>
