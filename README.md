@@ -1,6 +1,6 @@
 <div align="left">
   <a href="https://github.com/fuadhasanshihab">
-     <img src="https://raw.githubusercontent.com/fuadhasanshihab/img/main/footer-fuadhasanshihab.svg" alt="Logo" width="200px">
+     <img src="https://raw.githubusercontent.com/fuadhasanshihab/img/main/footer-fuadhasanshihab.svg" alt="Logo" width="180px">
   </a>
   <!--
   <h1 align="center">Fuad Hasan Shihab</h1>
@@ -45,5 +45,5 @@ FB Messenger: [m.me/fuadhasan.shihab](https://m.me/fuadhasan.shihab/)
 <style>
   h1{display:none!important;}
   body{margin:32px!important;}
-  .about{max-width:700px;}
+  .about{max-width:500px;}
 </style>
