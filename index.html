@@ -36,7 +36,6 @@
       font-style: normal;
       font-size: 15px!important;
       line-height:normal;
-      user-select: none;
     }
     .center {
      max-width: 1184px;
@@ -54,12 +53,13 @@
     }
 
     .logo {
+      user-select: none;
       width: 100%;
       max-width: 100%;
-      filter: drop-shadow(3px 15px 70px rgba(236, 242, 246, 0.5));
+      filter: drop-shadow(30px 15px 70px rgba(236, 242, 246, 1));
     }
     .logo:hover {
-      filter: drop-shadow(3px 15px 20px rgba(236, 242, 246, 1));
+      filter: drop-shadow(40px 25px 20px rgba(236, 242, 246, 1));
     }
     .about {
       max-width: 90%;
@@ -76,7 +76,7 @@
       border:none;
       outline:none;
       color:inherit;
-      -webkit-tap-highlight-color: white;
+      -webkit-tap-highlight-color: transparent!important;
     }
     a:hover{
       font-weight:bold;
