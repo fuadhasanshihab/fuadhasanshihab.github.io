@@ -36,6 +36,7 @@
       font-style: normal;
       font-size: 15px!important;
       line-height:normal;
+      user-select: none;
     }
     .center {
      max-width: 1184px;
@@ -55,10 +56,10 @@
     .logo {
       width: 100%;
       max-width: 100%;
-      filter: drop-shadow(3px 15px 70px rgba(236, 242, 246, 0.75));
+      filter: drop-shadow(3px 15px 70px rgba(236, 242, 246, 0.5));
     }
     .logo:hover {
-      filter: drop-shadow(3px 15px 20px rgba(236, 242, 246, 0.15));
+      filter: drop-shadow(3px 15px 20px rgba(236, 242, 246, 1));
     }
     .about {
       max-width: 90%;
@@ -72,11 +73,15 @@
       border-top: 1px solid #ccc;
     }
     a,a:hover,a:click, a:visited{
-  border:none;
-  outline:none;
-  color:inherit;
-  -webkit-tap-highlight-color: white;
-}
+      border:none;
+      outline:none;
+      color:inherit;
+      -webkit-tap-highlight-color: white;
+    }
+    a:hover{
+      font-weight:bold;
+      letter-spacing:1.4px;
+    }
   </style>
 </head>
 <body>
