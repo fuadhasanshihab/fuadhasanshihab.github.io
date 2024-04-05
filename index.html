@@ -56,10 +56,12 @@
       user-select: none;
       width: 100%;
       max-width: 100%;
-      filter: drop-shadow(30px 15px 70px rgba(89, 86, 233, 1));
+      filter: drop-shadow(0px 10px 150px rgba(89, 86, 233, 1));
+      transition: 0.2s ease-in-out;
     }
     .logo:hover {
-      filter: drop-shadow(40px 25px 20px rgba(89, 86, 233, 1));
+      filter: drop-shadow(10px 0px 200px rgba(89, 86, 233, 1));
+      transition: 0.2s ease-in-out;
     }
     .about {
       max-width: 90%;
@@ -81,7 +83,9 @@
     a:hover{
       font-weight:bold;
       letter-spacing:1.4px;
+      transition: 0.2s ease-in-out;
     }
+    ::selection{color:#fff;background:var(--linkB)} .drK ::selection{background:var(--darkU)} *, ::after, ::before{-webkit-box-sizing:border-box;box-sizing:border-box} *{-webkit-tap-highlight-color:transparent}
   </style>
 </head>
 <body>
