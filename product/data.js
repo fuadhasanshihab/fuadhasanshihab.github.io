@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
   const paramValue = urlParams.get('p');
   const productsData = {
-    'demo1': {
+    'demo19': {
       name: 'Lorem Ipsum Bangla Typography Combo Pack',
       code: 'FHS9362',
       price: '800',
