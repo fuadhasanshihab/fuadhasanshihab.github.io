@@ -31,11 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.getElementById('productImage').src = product.image;
     document.getElementById('productName').innerText = product.name;
+    document.getElementById('product-name').value = product.name;
     document.getElementById('productCode').innerText = product.code;
     document.getElementById('productPrice').innerText = product.price;
     document.getElementById('payBDT').innerText = product.price;
     document.getElementById('productDetails').innerText = product.details;
     document.getElementById('productLink').href = product.link;
+    document.getElementById('product-link-input').value = product.link;
     document.getElementById('bkashAmount').innerText = product.price;
     document.getElementById('nagadAmount').innerText = product.price;
     document.getElementById('rocketAmount').innerText = product.price;
