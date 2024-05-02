@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       name: 'Lorem Ipsum Bangla Typography Combo Pack',
       code: 'FHS9362',
       price: '800',
-      details: 'Description demo typo,
+      details: 'Description demo typo',
       link: '/search/Label/Resources',
       image: 'https://lh3.googleusercontent.com/B8Ry0wwh_7z_MqH4TwdJOnU2InT8AiX0G3tBf0H2WbgqvQygQvCjTyCrOmHmi213B66H4PdU4R1ZcrUFtLViPJ0gQsMm7-_lL9Sz8pGqC20bXkc9PgtOv_7AOuIenr4-uw=w260',
       form: 'https://docs.google.com/forms/d/e/1FAIpQLScWNZ2hGcTXJs7eF0Ysu5WuZOb904W6zN8Gvnqx6YIcgkazSg/viewform?embedded=true&usp=pp_url&entry.358930372=FHS3749&entry.723714736=DEMO+PRODUCT+NAME&entry.1724040677=500&entry.472063648=https://fuadhasanshihab.blogspot.com/2024/01/demo.html',
