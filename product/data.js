@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
       form: 'https://docs.google.com/forms/d/e/1FAIpQLScWNZ2hGcTXJs7eF0Ysu5WuZOb904W6zN8Gvnqx6YIcgkazSg/viewform?embedded=true&usp=pp_url&entry.358930372=FHS3749&entry.723714736=DEMO+PRODUCT+NAME&entry.1724040677=500&entry.472063648=https://fuadhasanshihab.blogspot.com/2024/01/demo.html',
       formBank: 'https://docs.google.com/forms/d/e/1FAIpQLSf7NzwO8tSYj9k-lO7iKs3CKy4-m5nEudf5DVlEggk9d15HnQ/viewform?usp=pp_url&entry.358930372=FHS3749&entry.723714736=DEMO+PRODUCT+NAME&entry.1724040677=500&entry.472063648=https://fuadhasanshihab.blogspot.com/2024/01/demo.html'
     },
-    'demo2': {
+    'demo20': {
       name: 'Dolor Sit Amet Bangla Font',
       code: 'FHS9274',
       price: '50',
