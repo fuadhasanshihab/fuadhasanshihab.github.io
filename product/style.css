@@ -3,6 +3,7 @@
       height:100%;
       margin:0px;
       top:0!important;
+      z-index: 9999999999999999999!important;
       font-family: "Lato", sans-serif;
       background: #ffffff;
       overflow-y: auto;
@@ -21,20 +22,13 @@
       #google_translate_element select{
       background:white;
       color:#000;
-      border: none!important;
+      border: 0px!important;
       font-weight:bold;
       border-radius:0px;
-      padding:0 0 2px;
+      padding:0 0 2px -3px;
       }
       #google_translate_element select:focus{
-      border: none!important;
-      }
-      #google_translate_elementttttt {
-      margin-bottom: -30px!important;
-      margin-top: 30px!important;
-      }
-      .sum-titleeeee {
-      margin: 42px 0 24px;
+      border: 0px!important;
       }
       h2 {
       margin-bottom:0px;
@@ -42,7 +36,7 @@
       padding-top: 0px;
       text-align:left;
       font-weight:bold;
-      font-size:24px!important;
+      font-size:28px!important;
       }
       ul {
       margin:0;
