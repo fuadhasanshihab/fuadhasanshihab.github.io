@@ -29,11 +29,11 @@
       #google_translate_element select:focus{
       border: none!important;
       }
-      #google_translate_element, .skiptranslate{
-      text-align:right;
+      #google_translate_element, .skiptranslate, .goog-te-gadget{
+      text-align:right!important;
       display: inline-block!important;
       right:0px!important;
-      float: right;
+      float: right!important;
       margin-right:0px!important;
       margin-left:0px!important;
       }
