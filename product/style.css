@@ -3,7 +3,7 @@
       height:100%;
       margin:0px;
       top:0!important;
-      font-family: "DM Sans","Hind Siliguri", sans-serif;
+      font-family: "Hind Siliguri", sans-serif;
       background: #ffffff;
       overflow-y: auto;
       }
@@ -19,17 +19,17 @@
       box-shadow: none !important;
       }
       #google_translate_element select{
-      background:#ffffff;
+      background:red;
       color:#000;
       border: none!important;
       font-weight:bold;
       border-radius:5px;
       padding:10px;
       }
-      #google_translate_elementt select:focus{
+      #google_translate_elementttt select:focus{
       border: none!important;
       }
-      #google_translate_element{
+      #google_translate_elementtt{
       text-align:right;
       justify-content:right;
       float:right;
