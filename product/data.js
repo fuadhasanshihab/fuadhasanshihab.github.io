@@ -2,6 +2,9 @@ const productsData = {
   'FHS456': {
     name: 'Business Card PLP',
     code: 'FHS456',
+    previousPrice: '100',
+    discountText: 'Discount',
+    discount: '-50%',
     price: '50',
     details: 'Quantity: 1',
     link: 'https://fuadhasanshihab.blogspot.com/2023/12/business-card-plp.html',
@@ -12,6 +15,9 @@ const productsData = {
   'demo2': {
     name: 'Dolor Sit Amet Bangla Font',
     code: 'FHS9274',
+    previousPrice: '',
+    discountText: '',
+    discount: '',
     price: '50',
     details: 'detail aka',
     link: '/product2.html',
