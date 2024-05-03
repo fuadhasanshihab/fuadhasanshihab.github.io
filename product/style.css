@@ -158,10 +158,10 @@ a {
 }
 
 .price {
-  bottom: 0px;
+  bottom: -30px;
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: 2px;
 }
 
 .order-table {
@@ -175,7 +175,6 @@ a {
 .order-table td:last-of-type {
   vertical-align: top;
   padding-left: 32px;
-  bottom:-20px!important;
 }
 
 .line {
@@ -195,7 +194,7 @@ a {
   font-size: 22px;
   position: static;
   font-weight: bold;
-  margin-bottom: 42px!important;
+  margin-bottom: 52px!important;
   right: 32px;
   left: 32px;
 }
