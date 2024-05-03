@@ -338,7 +338,7 @@ a {
 .credit {
   justify-content: center;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 0px;
   font-size: 12px;
   font-weight: 300;
   margin-bottom: 0px;
@@ -347,7 +347,7 @@ a {
 .error {
   justify-content: center;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 0px;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 0px;
