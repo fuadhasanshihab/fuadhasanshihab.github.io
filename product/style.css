@@ -162,10 +162,10 @@ a {
 }
 
 .price {
-  bottom: -5px;
+  bottom: 0px;
   position: absolute;
   right: 0px;
-  top: -10px;
+  top: 0px;
 }
 
 .order-table td:first-of-type {
