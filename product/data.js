@@ -1,7 +1,7 @@
 const productsData = {
   'demo1': {
     name: 'Business Card PLP',
-    code: 'FHS9362',
+    code: 'FHS456',
     price: '50',
     details: 'Quantity: 1',
     link: 'https://fuadhasanshihab.blogspot.com/2023/12/business-card-plp.html',
