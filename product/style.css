@@ -26,6 +26,10 @@
       border-radius:3px;
       padding:8px 12px
       }
+      #google_translate_element{
+      text-align:right;
+      justify-content:right;
+      }
       h2 {
       margin-bottom:22px;
       margin-top:0px;
