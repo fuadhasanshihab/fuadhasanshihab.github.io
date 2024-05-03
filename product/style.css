@@ -128,11 +128,11 @@
       width:100%;
       }
       .total {
-      margin-top:1000px!important;
+      margin-top:300px!important;
       font-size:22px;
       position: static;
       font-weight: bold;
-      bottom:32px;
+      margin-bottom:32px!important;
       right:32px;
       left:32px;
       }
