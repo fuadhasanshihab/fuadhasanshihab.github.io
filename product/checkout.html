@@ -361,6 +361,7 @@
             <input class='input-field' id="comment-input" name="comment" type="text">
             <a class='pay-btn' id="submit-whatsapp" title="send now" style="background:#1dab61;">Confirm via Whatsapp</a>
             <a class='pay-btn' id="submit-facebook" title="send now" style="background:#0568fa;">Confirm via Facebook</a>
+            <a class='pay-btn' id="submit-telegram" title="send now" style="background:#0568fa;">Confirm via Telegram</a>
             <a class='pay-btn' id="submit-email" title="send now" style="background:#ea4235;">Confirm via Email</a>
             <div class="credit">
               © 2018 - <script type="text/javascript">var y = new Date();document.write(y.getFullYear());</script> Fuad Hasan Shihab. <br>For any inquiries: <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
@@ -397,6 +398,14 @@
               var message = generateMessage();
               var facebookLink = "https://m.me/fuadhasan.shihab?text=" + encodeURIComponent(message);
               window.open(facebookLink, '_blank');
+          }
+      });
+
+      document.getElementById("submit-telegram").addEventListener("click", function() {
+          if (validateForm()) {
+              var message = generateMessage();
+              var telegramLink = "https://t.me/username?text=" + encodeURIComponent(message);
+              window.open(telegramLink, '_blank');
           }
       });
       
