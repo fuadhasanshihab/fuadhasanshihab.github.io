@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
-body, span, div, a, p, font, select, input, button, textarea , h1, h2,h3,h4,h5,h6,h7{font-family: 'Hind Siliguri', sans-serif!important;line-height:1!important;}
+body, span, div, a, p, font, select, input, button, textarea , h1, h2,h3,h4,h5,h6,h7{font-family: 'Hind Siliguri', sans-serif!important;line-height:1.15!important;}
 
 body,
 html {
