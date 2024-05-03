@@ -395,7 +395,7 @@
       document.getElementById("submit-facebook").addEventListener("click", function() {
           if (validateForm()) {
               var message = generateMessage();
-              var facebookLink = "https://m.me/fuadhasanshihabyt?text=" + encodeURIComponent(message);
+              var facebookLink = "https://m.me/fuadhasan.shihab?text=" + encodeURIComponent(message);
               window.open(facebookLink, '_blank');
           }
       });
@@ -449,7 +449,7 @@
           message += "*Name:* " + name + "\n";
           message += "*Email Address:* " + email + "\n";
           message += "*Phone Number:* " + phone + "\n";
-          message += "*Comment:* " + comment + "\n";
+          message += "*Comment:* " + comment;
           return message;
       }
     </script>
