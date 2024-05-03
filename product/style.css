@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Tiro+Bangla&display=swap');
 
-body, span, div, a, p, font, select, input, button, textarea , h1, h2,h3,h4,h5,h6,h7{font-family: 'Lato','Tiro Bangla', sans-serif!important;line-height:normal!important;}
+body, span, div, a, p, font, select, input, button, textarea , h1, h2,h3,h4,h5,h6,h7{font-family: 'Lato', sans-serif!important;line-height:normal!important;}
 
 body,
 html {
@@ -316,11 +316,12 @@ a {
   line-height: 2em;
   border-radius: 0px;
   font-size: 19px;
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #fff;
   cursor: pointer;
   position: static;
-  bottomm: 32px;
+  padding-top:8px;
+  padding-bottom: 8px;
   margin: 8px 0 0;
   width: 100%;
   justify-content: center;
