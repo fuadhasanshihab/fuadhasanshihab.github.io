@@ -19,20 +19,20 @@
       box-shadow: none !important;
       }
       #google_translate_element select{
-      background:red;
+      background:blue;
       color:#000;
       border: none!important;
       font-weight:bold;
       border-radius:5px;
       padding:10px;
       }
-      #google_translate_elementttt select:focus{
+      #google_translate_element select:focus{
       border: none!important;
       }
-      #google_translate_elementtt{
-      text-align:right;
-      justify-content:right;
-      float:right;
+      #google_translate_element{
+      text-align:center;
+      justify-content:center;
+      float:center;
       left:0!important;
       }
       h2 {
