@@ -153,7 +153,12 @@
               alert("Please fill in all required fields.");
               return false;
           }
-      
+
+          if (recaptchaResponse === "") {
+              alert("Please complete the reCAPTCHA.");
+              return false;
+          }
+        
           // Validate email format
           var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           if (!emailPattern.test(email)) {
