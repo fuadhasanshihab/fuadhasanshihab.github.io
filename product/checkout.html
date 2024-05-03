@@ -153,11 +153,6 @@
               alert("Please fill in all required fields.");
               return false;
           }
-
-          if (recaptchaResponse === "") {
-              alert("Please complete the reCAPTCHA.");
-              return false;
-          }
         
           // Validate email format
           var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -169,6 +164,11 @@
           // Validate phone number length
           if (phone.length < 11) {
               alert("Phone number must be at least 11 digits long.");
+              return false;
+          }
+
+          if (recaptchaResponse === "") {
+              alert("Please complete the reCAPTCHA.");
               return false;
           }
       
@@ -191,8 +191,8 @@
           message += "Product ID: " + productCode + "\n";
           message += "Quantity: 1\n";
           message += "Price: " + productPrice + "\n";
-          message += "Product Link: " + productLink + "\n";
-          message += "\n" + comment + "\n\n";
+          message += "Product Link: " + productLink + "\n\n";
+          message += "Comment: " + comment + "\n\n";
           message += "Billing Details:\n"
           message += "Name: " + name + "\n";
           message += "Email Address: " + email + "\n";
