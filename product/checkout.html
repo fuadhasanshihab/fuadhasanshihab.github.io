@@ -69,6 +69,7 @@
             </table>
             <img class="hidden" src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4ncrVmRn3jvKfmIA8twt8BPIrT5-NQONf_QANBAgiRiyV5EIaIn3qSRo2CpGTXHN1gj5Lweok9nFNOCD0f0JxKf0KnTixJ9QHbRh2z7Tazi9v3KpU4RHv_kiHW9QFrC1XaB3HdKq68IpWYsV4euBGRgk8lF7lR1T9-Z4HeqJnagQSViKOyyGj7vON2g0Y/s1600/fhsBkash.png' height='80' class='payment-method-img' id='payment-method-img'></img>
             <input type="hidden" id="product-name" value="">
+            <input type="hidden" id="product-code" value="">
             <input id="product-link-input" name="product_link" type="hidden" value="">
             <input type="hidden" id="product-price-input" value="">
             <span>Your Name: <span class="required-field">*</span></span> 
@@ -169,6 +170,7 @@
       function generateMessage() {
           var productName = document.getElementById("product-name").value;
           var productPrice = document.getElementById("product-price-input").value;
+          var productCode = document.getElementById("product-code").value;
           var name = document.getElementById("name-input").value;
           var email = document.getElementById("email-input").value;
           var phone = document.getElementById("phone-input").value;
@@ -178,6 +180,7 @@
       
           var message = "_Hello, I want to buy_\n _Product Details:_\n";
           message += "*Product Title:* " + productName + "\n";
+          message += "*Product ID:* " + productCode + "\n";
           message += "*Quantity*: 1\n";
           message += "*Product Price:* " + productPrice + "\n";
           message += "*Product Link:* " + productLink + "\n\n";
@@ -249,6 +252,7 @@
       document.getElementById('product-Name-sum').innerText = product.name;
       document.getElementById('product-name').value = product.name;
       document.getElementById('productCode').innerText = product.code;
+      document.getElementById('product-code').value = product.code;
       document.getElementById('productPrice').innerText = product.price;
       document.getElementById('product-price-input').value = product.price;
       document.getElementById('singleProductPrice').innerText = product.price;
