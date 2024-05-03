@@ -194,7 +194,7 @@ a {
   font-size: 22px;
   position: static;
   font-weight: bold;
-  margin-bottom: 0px !important;
+  margin-bottom: 42px!important;
   right: 32px;
   left: 32px;
 }
@@ -292,7 +292,7 @@ a {
   padding-top: 42px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 42px;
+  padding-bottom: 52px;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
@@ -343,17 +343,17 @@ a {
 .credit {
   justify-content: center;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 42px;
   font-size: 12px;
   font-weight: 300;
-  margin-bottom: 52px;
+  margin-bottom: 0px;
 }
 
 .error {
   justify-content: center;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 42px;
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 52px;
+  margin-bottom: 0px;
 }
