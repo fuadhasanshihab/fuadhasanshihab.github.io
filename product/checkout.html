@@ -187,13 +187,13 @@
           var comment = document.getElementById("comment-input").value;
           var productLink = document.getElementById("product-link-input").value;
       
-          var message = "Order Summary:";
-          message += "Product Name:" + productName + "\n";
+          var message = "Order Summary:\n";
+          message += "Product Name: " + productName + "\n";
           message += "Product ID: " + productCode + "\n";
           message += "Quantity: 1\n";
-          message += "Price: " + productPrice + "\n";
-          message += "Link: " + productLink + "\n\n";
-          message += "Comment: " + comment + "\n\n";
+          message += "Price: ৳" + productPrice + "\n";
+          message += "Link: " + productLink + "\n";
+          message += "\n" + comment + "\n\n";
           message += "Billing Details:\n"
           message += "Name: " + name + "\n";
           message += "Email: " + email + "\n";
