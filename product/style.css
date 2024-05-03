@@ -163,6 +163,7 @@ a {
   bottom: 0px;
   position: absolute;
   right: 0px;
+  margin-top: -30px;
 }
 
 .order-table td:first-of-type {
