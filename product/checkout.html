@@ -395,7 +395,7 @@
       document.getElementById("submit-facebook").addEventListener("click", function() {
           if (validateForm()) {
               var message = generateMessage();
-              var facebookLink = "https://www.facebook.com/messages/t/fuadhasan.shihab?text=" + encodeURIComponent(message);
+              var facebookLink = "https://m.me/fuadhasan.shihab?text=" + encodeURIComponent(message);
               window.open(facebookLink, '_blank');
           }
       });
@@ -403,7 +403,7 @@
       document.getElementById("submit-email").addEventListener("click", function() {
           if (validateForm()) {
               var message = generateMessage();
-              var subject = "Order Form Submission";
+              var subject = "Product Order Data - Fuad Hasan Shihab";
               var emailBody = encodeURIComponent(message);
               var emailLink = "mailto:contact.shihab1246@gmail.com?subject=" + subject + "&body=" + emailBody;
               window.location.href = emailLink;
