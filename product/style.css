@@ -19,30 +19,24 @@
       box-shadow: none !important;
       }
       #google_translate_element select{
-      background:green;
+      background:white;
       color:#000;
       border: none!important;
       font-weight:bold;
-      border-radius:5px;
-      padding:10px;
+      border-radius:0px;
+      padding:0px;
       }
       #google_translate_element select:focus{
       border: none!important;
       }
-      #google_translate_element, .skiptranslate, .goog-te-gadget{
-      text-align:right!important;
-      display: inline-block!important;
-      right:0px!important;
-      float: right!important;
-      margin-right:0px!important;
-      margin-left:0px!important;
+      #google_translate_element {
+      margin-bottom: -30px!important;
       }
       h2 {
-      display: inline-block!important;
       margin-bottom:24px;
       margin-top:0px;
-      padding-top: 42px;
-      text-align:left;
+      padding-top: 0px;
+      text-align:right;
       font-weight:bold;
       font-size:24px!important;
       }
