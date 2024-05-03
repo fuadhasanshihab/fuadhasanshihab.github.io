@@ -38,12 +38,12 @@
             <div class='total'>
               <span style='float:left;'>
                 <div class='hidden thin dense'>VAT 19%</div>
-                <div class='hidden thin dense'>Delivery</div>
+                <div id="discountText" class='thin dense'></div>
                 TOTAL
               </span>
               <span style='float:right; text-align:right;'>
                 <div class='hidden thin dense'>$68.75</div>
-                <div class='hidden thin dense'>$4.95</div>
+                <div id="discount" class='thin dense'></div>
                 ৳<span id="productPrice"></span>
               </span>
             </div>
@@ -254,6 +254,8 @@
       document.getElementById('productCode').innerText = product.code;
       document.getElementById('product-code').value = product.code;
       document.getElementById('productPrice').innerText = product.price;
+      document.getElementById('discountText').innerText = product.discountText;
+      document.getElementById('discount').innerText = product.discount;
       document.getElementById('product-price-input').value = product.price;
       document.getElementById('singleProductPrice').innerText = product.price;
       document.getElementById('productDetails').innerText = product.details;
