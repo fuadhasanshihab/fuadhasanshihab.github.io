@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - Fuad Hasan Shihab</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
@@ -80,6 +81,7 @@
             <input class='input-field' id="phone-input" name="phone" type="tel" required/>
             <span>Comment:<span class="thin small">(optional)</span></span>
             <input class='input-field' id="comment-input" name="comment" type="text"/>
+            <div class="g-recaptcha" data-sitekey="6LcEPs8pAAAAAOBHoPPcthWnutWsjGxlzz5PKjGs"></div>
             <a class='pay-btn' id="submit-whatsapp" title="send now" style="background:#1dab61;">Confirm via Whatsapp</a>
             <a class='pay-btn' id="submit-facebook" title="send now" style="background:#0568fa;">Confirm via Facebook</a>
             <a class='pay-btn' id="submit-telegram" title="send now" style="background:#30a3e6;">Confirm via Telegram</a>
@@ -145,7 +147,8 @@
           var name = document.getElementById("name-input").value;
           var email = document.getElementById("email-input").value;
           var phone = document.getElementById("phone-input").value;
-      
+          var recaptchaResponse = grecaptcha.getResponse(); // Get reCAPTCHA response
+        
           if (name === "" || email === "" || phone === "") {
               alert("Please fill in all required fields.");
               return false;
