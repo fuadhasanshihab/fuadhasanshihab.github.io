@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
-body, span, div, a, p, font, select, input, button, textarea , h1, h2,h3,h4,h5,h6,h7{font-family: 'Tiro Bangla', sans-serif!important;line-height:normal!important;}
+body, span, div, a, p, font, select, input, button, textarea , h1, h2,h3,h4,h5,h6,h7{font-family: 'Hind Siliguri', sans-serif!important;line-height:1!important;}
 
 body,
 html {
@@ -10,7 +10,7 @@ html {
   z-index: 99999!important;
   background: #ffffff;
   overflow-y: auto;
-  line-height: normal!important;
+  line-height: 1!important;
 }
 
 body>.skiptranslate,
@@ -152,11 +152,6 @@ a {
   position: relative;
 }
 
-.order-table td:last-of-type {
-  vertical-align: top;
-  padding-left: 32px;
-}
-
 .order-summary-content {
   table-layout: fixed;
 }
@@ -168,12 +163,17 @@ a {
   top: 0px;
 }
 
+.order-table {
+  position: relative;
+}
+
 .order-table td:first-of-type {
   width: 35%;
 }
 
-.order-table {
-  position: relative;
+.order-table td:last-of-type {
+  vertical-align: top;
+  padding-left: 32px;
 }
 
 .line {
