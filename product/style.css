@@ -24,7 +24,7 @@
       border: none!important;
       font-weight:bold;
       border-radius:0px;
-      padding:0px;
+      padding:2px;
       }
       #google_translate_element select:focus{
       border: none!important;
@@ -32,8 +32,11 @@
       #google_translate_element {
       margin-bottom: -30px!important;
       }
+      .sum-title {
+      margin: 42px 0 24px;
+      }
       h2 {
-      margin-bottom:24px;
+      margin-bottom:0px;
       margin-top:0px;
       padding-top: 0px;
       text-align:right;
