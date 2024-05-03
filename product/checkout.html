@@ -95,10 +95,10 @@
             <span>Comment:<span class="thin small">(optional)</span></span>
             <input class='input-field' id="comment-input" name="comment" type="text"/>
             <div class="g-recaptcha" data-sitekey="6LcEPs8pAAAAAOBHoPPcthWnutWsjGxlzz5PKjGs"></div>
-            <a class='pay-btn' id="submit-whatsapp" title="send now" style="background:#1dab61;">Confirm via Whatsapp</a>
-            <a class='pay-btn' id="submit-facebook" title="send now" style="background:#0568fa;">Confirm via Facebook</a>
-            <a class='pay-btn' id="submit-telegram" title="send now" style="background:#30a3e6;">Confirm via Telegram</a>
-            <a class='pay-btn' id="submit-email" title="send now" style="background:#ea4235;">Confirm via Email</a>
+            <a class='hidden pay-btn' id="submit-whatsapp" title="send now" style="background:#1dab61;">Order via Whatsapp</a>
+            <a class='pay-btn' id="submit-facebook" title="send now" style="background:#0568fa;">Order via Facebook</a>
+            <a class='pay-btn' id="submit-telegram" title="send now" style="background:#30a3e6;">Order via Telegram</a>
+            <a class='pay-btn' id="submit-email" title="send now" style="background:#ea4235;">Order via Email</a>
              <div class="credit">
                <img src="https://i.ibb.co/GssLzvt/20240503-114517.png" alt="payment method" width="130px" border="0"><br>
               © 2018 - <script type="text/javascript">var y = new Date();document.write(y.getFullYear());</script> Fuad Hasan Shihab. <br>For any inquiries: <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
@@ -125,7 +125,7 @@
       document.getElementById("submit-whatsapp").addEventListener("click", function() {
           if (validateForm()) {
               var message = generateMessage();
-              var whatsappLink = "https://wa.me/8801703380522?text=" + encodeURIComponent(message);
+              var whatsappLink = "https://wa.me/88017000000000?text=" + encodeURIComponent(message);
               window.open(whatsappLink, '_blank');
           }
       });
