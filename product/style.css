@@ -31,10 +31,12 @@
       }
       #google_translate_element{
       text-align:right;
-      position:relative;
+      display: flex;
       right:0px!important;
+      margin:-20px 0 0 auto!important;
       }
       h2 {
+      display: flex;
       margin-bottom:0px;
       margin-top:0px;
       padding-top: 42px;
