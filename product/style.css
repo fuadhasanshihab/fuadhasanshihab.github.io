@@ -31,13 +31,13 @@
       }
       #google_translate_element{
       text-align:right;
-      display: inline-block;
+      display: inline-block!important;
       right:0px!important;
       float: right;
       margin-right:0px!important;
       }
       h2 {
-      display: inline-block;
+      display: inline-block!important;
       margin-bottom:24px;
       margin-top:0px;
       padding-top: 42px;
