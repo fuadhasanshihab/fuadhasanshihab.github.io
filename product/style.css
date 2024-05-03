@@ -19,12 +19,15 @@
       box-shadow: none !important;
       }
       #google_translate_element select{
-      background:#ecf2f6;
+      background:#ffffff;
       color:#000;
-      border: none;
+      border: none!important;
       font-weight:bold;
       border-radius:0px;
       padding:0;
+      }
+      #google_translate_element select:focus{
+      border: none!important;
       }
       #google_translate_element{
       text-align:right;
