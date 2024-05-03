@@ -1,5 +1,5 @@
 const productsData = {
-  'demo1': {
+  'FHS456': {
     name: 'Business Card PLP',
     code: 'FHS456',
     price: '50',
