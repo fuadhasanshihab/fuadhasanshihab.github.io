@@ -29,6 +29,7 @@
       #google_translate_element{
       text-align:right;
       justify-content:right;
+      float:right;
       }
       h2 {
       margin-bottom:22px;
