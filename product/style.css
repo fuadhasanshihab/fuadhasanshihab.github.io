@@ -87,7 +87,7 @@ a {
 }
 
 .thin {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .small {
@@ -175,6 +175,7 @@ a {
 .order-table td:last-of-type {
   vertical-align: top;
   padding-left: 32px;
+  bottom:-20px!important;
 }
 
 .line {
