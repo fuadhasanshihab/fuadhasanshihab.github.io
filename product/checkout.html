@@ -435,6 +435,12 @@
               alert("Please enter a valid email address.");
               return false;
           }
+
+          // Validate phone number length
+          if (phone.length < 11) {
+              alert("Phone number must be at least 11 digits long.");
+              return false;
+          }
       
           return true;
       }
