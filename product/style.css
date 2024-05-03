@@ -158,10 +158,11 @@ a {
 }
 
 .price {
-  bottom: -30px;
+  bottom: 0px;
   position: absolute;
   right: 0px;
   top: 2px;
+  max-height:20px!important;
 }
 
 .order-table {
