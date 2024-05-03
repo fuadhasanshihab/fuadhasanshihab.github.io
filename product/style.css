@@ -24,7 +24,7 @@
       border: none!important;
       font-weight:bold;
       border-radius:0px;
-      padding:2px;
+      padding:0 0 2px;
       }
       #google_translate_element select:focus{
       border: none!important;
