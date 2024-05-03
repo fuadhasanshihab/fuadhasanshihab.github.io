@@ -19,7 +19,7 @@
       box-shadow: none !important;
       }
       #google_translate_element select{
-      background:black;
+      background:green;
       color:#000;
       border: none!important;
       font-weight:bold;
@@ -31,13 +31,13 @@
       }
       #google_translate_element{
       text-align:right;
-      display: flex;
+      display: inline-block;
       right:0px!important;
-      margin:-20px 0 0 auto!important;
+      float: right;
       }
       h2 {
       display: flex;
-      margin-bottom:0px;
+      margin-bottom:24px;
       margin-top:0px;
       padding-top: 42px;
       text-align:left;
