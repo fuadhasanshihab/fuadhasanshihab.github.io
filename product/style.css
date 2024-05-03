@@ -53,7 +53,7 @@ h2 {
   margin-top: 0px;
   padding-top: 0px;
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 28px !important;
 }
 
@@ -82,8 +82,8 @@ a {
 }
 
 a:hover{
-  font-weight:bold;
-  letter-spacing:1.4px;
+  font-weight:600;
+  letter-spacing:1.2px;
   transition: 0.2s ease-in-out;
 }
 
@@ -192,7 +192,7 @@ a:hover{
 .line {
   height: 1px;
   width: 100%;
-  margin-top: 14px;
+  margin-top: 12px;
   margin-bottom: 20px;
   background: #ddd;
 }
@@ -205,7 +205,7 @@ a:hover{
   margin-top: 0px !important;
   font-size: 22px;
   position: static;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 0px!important;
   right: 32px;
   left: 32px;
@@ -337,18 +337,6 @@ a:hover{
   width: 100%;
   justify-content: center;
   text-align: center;
-  letter-spacing:1;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
-}
-
-.pay-btn:hover {
-  opacity: 1;
-  font-weight: 600;
-  letter-spacing: 1.5;
-  color: #eee;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
 }
 
 .credit {
@@ -356,7 +344,7 @@ a:hover{
   text-align: center;
   margin-top: 32px;
   font-size: 12px;
-  font-weight:400;
+  font-weight:300;
   margin-bottom: 0px;
 }
 
@@ -365,6 +353,6 @@ a:hover{
   text-align: center;
   margin-top: 52px;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 0px;
 }
