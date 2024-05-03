@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Fuad Hasan Shihab</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+      body,html {
+      height:100%;
+      margin:0px;
+      font-family:lato;
+      }
+      h2 {
+      margin-bottom:30px;
+      margin-top:32px;
+      text-align:center;
+      font-weight:400;
+      font-size:32px;
+      }
+      ul {
+      margin:0;
+      padding:0;
+      }
+      ul li {
+      list-style:none;
+      padding-left:10px;
+      cursor:pointer;
+      }
+      ul li:hover {
+      background:rgba(255,255,255,0.1);
+      }
+      .required-field{
+      color: red;
+      }
+      a {
+      text-decoration:none;
+      }
+      .hidden {
+      display:none!important;
+      font-size: 0px!important;
+      visibility: none!important;
+      }
+      .thin {
+      font-weight:400;
+      }
+      .small {
+      font-size:12px;
+      font-size:.8rem;
+      }
+      .half-input-table {
+      border-collapse:collapse;
+      width:100%;
+      }
+      .half-input-table td:first-of-type {
+      border-right:10px solid #ecf2f6;
+      width:50%;
+      }
+      .container {
+      height:auto;
+      -webkit-box-pack:center;
+      -webkit-justify-content:center;
+      -ms-flex-pack:center;
+      justify-content:center;
+      -webkit-box-align:center;
+      -webkit-align-items:center;
+      -ms-flex-align:center;
+      align-items:center;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:-ms-flexbox;
+      display:flex;
+      }
+      .window {
+      height:100%;
+      width:100%;
+      background:#fff;
+      display:block;
+      box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0);
+      z-index:10;
+      }
+      .order-summary {
+      height:auto;
+      width:100%!important;
+      max-width: 764px;
+      margin: 0 auto;
+      padding-left:32px;
+      padding-right:32px;
+      padding-bottom:60px;
+      border-radius:0px;
+      box-sizing:border-box;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:-ms-flexbox;
+      display:block;
+      -webkit-box-pack:center;
+      -webkit-justify-content:center;
+      -ms-flex-pack:center;
+      justify-content:center;
+      position:relative;
+      }
+      .order-table td:last-of-type {
+      vertical-align:top;
+      padding-left:32px;
+      }
+      .order-summary-content {
+      table-layout:fixed;
+      }
+      .price {
+      bottom:0px;
+      position:absolute;
+      right:0px;
+      color:#5956e9;
+      }
+      .price:before {
+      content:'৳';
+      }
+      .order-table td:first-of-type {
+      width:35%;
+      }
+      .order-table {
+      position:relative;
+      }
+      .line {
+      height:1px;
+      width:100%;
+      margin-top:10px;
+      margin-bottom:10px;
+      background:#ddd;
+      }
+      .full-width {
+      width:100%;
+      }
+      .total {
+      margin-top:32px;
+      font-size:20px;
+      font-size:1.3rem;
+      position:absolute;
+      bottom:32px;
+      right:32px;
+      left:32px;
+      }
+      .dense {
+      line-height:1.2em;
+      font-size:16px;
+      font-size:1rem;
+      }
+      .input-field {
+      background:rgba(255,255,255,1);
+      margin-bottom:10px;
+      margin-top:3px;
+      line-height:1.5em;
+      font-size:20px;
+      font-size:1.3rem;
+      border:none;
+      padding:5px 10px 5px 10px;
+      color:#000;
+      box-sizing:border-box;
+      width:100%;
+      margin-left:auto;
+      margin-right:auto;
+      }
+      .dropdown {
+      position:relative;
+      }
+      .dropdown-btn {
+      background:rgba(255,255,255,1);
+      width:100%;
+      border-radius:5px;
+      text-align:center;
+      line-height:1.5em;
+      cursor:pointer;
+      position:relative;
+      -webkit-transition:background .2s ease;
+      transition:background .2s ease;
+      }
+      .dropdown-btn:after {
+      content: '\25BE';
+      right:8px;
+      position:absolute;
+      }
+      .dropdown-btn:hover {
+      background:rgba(255,255,255,0.9);
+      -webkit-transition:background .2s ease;
+      transition:background .2s ease;
+      }
+      .dropdown-select {
+      position:absolute;
+      background:#fff;
+      text-align:left;
+      box-shadow:0px 3px 5px 0px rgba(0,0,0,0.01);
+      border-radius:5px;
+      width:100%;
+      left:0px;
+      line-height:2em;
+      margin-top:2px;
+      box-sizing:border-box;
+      display:none;
+      }
+      .dropdown-select.visible {
+      display:block;
+      }
+      .checkout {
+      background:#ecf2f6;
+      height:auto;
+      width:100%;
+      color:#000!important;
+      -webkit-box-pack:center;
+      -webkit-justify-content:center;
+      -ms-flex-pack:center;
+      justify-content:center;
+      font-size:14px;
+      font-size:.9rem;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:-ms-flexbox;
+      display:flex;
+      box-sizing:border-box;
+      border-radius:0px;
+      position:relative;
+      }
+      .checkout-content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding-top:32px;
+      padding-left:32px;
+      padding-right:32px;
+      padding-bottom:32px;
+      -webkit-flex-flow:column;
+      -ms-flex-flow:column;
+      flex-flow:column;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:-ms-flexbox;
+      display:flex;
+      width:100%;
+      }
+      .payment-method-img {
+      display:block;
+      max-height:80px;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:35px;
+      margin-bottom:35px;
+      }
+      .pay-btn {
+      border:none;
+      line-height:2em;
+      border-radius:0px;
+      font-size:19px;
+      font-size:1.2rem;
+      color:#fff;
+      cursor:pointer;
+      position:static;
+      bottomm:32px;
+      margin: 8px 0 0;
+      width:100%;
+      justify-content:center;
+      text-align: center;
+      -webkit-transition:all .2s ease;
+      transition:all .2s ease;
+      }
+      .pay-btn:hover {
+      opacity: 1;
+      font-weight:600;
+      letter-spacing: .4;
+      color:#eee;
+      -webkit-transition:all .2s ease;
+      transition:all .2s ease;
+      }
+      .credit {
+      justify-content:center;
+      text-align:center;
+      margin-top:32px;
+      font-size: 12px;
+      font-weight:300;
+      margin-bottom:0px;
+      }
+      .error {
+      justify-content:center;
+      text-align:center;
+      margin-top:32px;
+      font-size: 22px;
+      font-weight:700;
+      margin-bottom:0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container' id="container" style="display: none;">
+      <div class='window'>
+        <div class='order-summary'>
+          <div class='order-summary-content'>
+            <h2>Order Summary</h2>
+            <div class='line'></div>
+            <a id="productLink" href="">
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class='full-width' id="productImage" src=""/>
+                    </td>
+                    <td>
+                      <br> <span id="product-Name-sum" class='thin'></span><br>
+                      <span id="productDetails" class='thin small'></span><br>
+                      <span id="productCode" class='thin small'></span><br><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price' id="singleProductPrice"></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </a>
+            <div class='line'></div>
+            <div class='total'>
+              <span style='float:left;'>
+                <div class='hidden thin dense'>VAT 19%</div>
+                <div class='hidden thin dense'>Delivery</div>
+                TOTAL
+              </span>
+              <span style='float:right; text-align:right;'>
+                <div class='hidden thin dense'>$68.75</div>
+                <div class='hidden thin dense'>$4.95</div>
+                ৳<span id="productPrice"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class='checkout'>
+          <div class='checkout-content'>
+            <table class='hidden half-input-table'>
+              <tr>
+                <td>Please select your payment method: <span class="required-field">*</span></td>
+                <td>
+                  <div class='dropdown' id='card-dropdown'>
+                    <div class='dropdown-btn' id='current-card'>Bkash</div>
+                    <div class='dropdown-select'>
+                      <ul>
+                        <li>Nagad</li>
+                        <li>Rocket</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <img class="hidden" src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4ncrVmRn3jvKfmIA8twt8BPIrT5-NQONf_QANBAgiRiyV5EIaIn3qSRo2CpGTXHN1gj5Lweok9nFNOCD0f0JxKf0KnTixJ9QHbRh2z7Tazi9v3KpU4RHv_kiHW9QFrC1XaB3HdKq68IpWYsV4euBGRgk8lF7lR1T9-Z4HeqJnagQSViKOyyGj7vON2g0Y/s1600/fhsBkash.png' height='80' class='payment-method-img' id='payment-method-img'></img>
+            <input type="hidden" id="product-name" value="">
+            <input id="product-link-input" name="product_link" type="hidden" value="">
+            <input type="hidden" id="product-price-input" value="">
+            <span>Your Name: <span class="required-field">*</span></span> 
+            <input class='input-field' id="name-input" name="name" type="text" required/><br>
+            <span>Email: <span class="required-field">*</span></span> 
+            <input class='input-field' id="email-input" name="email" type="email" required/><br>
+            <span>Phone Number: <span class="required-field">*</span></span> 
+            <input class='input-field' id="phone-input" name="phone" type="tel" required pattern="\d*">
+            Comment:
+            <input class='input-field' id="comment-input" name="comment" type="text">
+            <a class='pay-btn' id="submit-whatsapp" title="send now" style="background:#1dab61;">Confirm via Whatsapp</a>
+            <a class='pay-btn' id="submit-facebook" title="send now" style="background:#0568fa;">Confirm via Facebook</a>
+            <a class='pay-btn' id="submit-email" title="send now" style="background:#ea4235;">Confirm via Email</a>
+            <div class="credit">
+              © 2018 - <script type="text/javascript">var y = new Date();document.write(y.getFullYear());</script> Fuad Hasan Shihab. <br>For any inquiries: <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="InvalidProduct" class="order-summary" style="display: none; color: red;">
+      <br>
+      <h2 class="error">error 404 - invalid product data</h2>
+      <div class="credit">
+        © 2018 - <script type="text/javascript">var y = new Date();document.write(y.getFullYear());</script> Fuad Hasan Shihab. <br>For any inquiries: <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
+      </div>
+    </div>
+    <div id="NoProductFound" class="order-summary" style="display: none;">
+      <br>
+      <h2 class="error">error 404 - no product found</h2>
+      <div class="credit">
+        © 2018 - <script type="text/javascript">var y = new Date();document.write(y.getFullYear());</script> Fuad Hasan Shihab. <br>For any inquiries: <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById("submit-whatsapp").addEventListener("click", function() {
+          if (validateForm()) {
+              var message = generateMessage();
+              var whatsappLink = "https://wa.me/8801703380522?text=" + encodeURIComponent(message);
+              window.open(whatsappLink, '_blank');
+          }
+      });
+      
+      document.getElementById("submit-facebook").addEventListener("click", function() {
+          if (validateForm()) {
+              var message = generateMessage();
+              var facebookLink = "https://www.facebook.com/messages/t/fuadhasan.shihab?text=" + encodeURIComponent(message);
+              window.open(facebookLink, '_blank');
+          }
+      });
+      
+      document.getElementById("submit-email").addEventListener("click", function() {
+          if (validateForm()) {
+              var message = generateMessage();
+              var subject = "Order Form Submission";
+              var emailBody = encodeURIComponent(message);
+              var emailLink = "mailto:contact.shihab1246@gmail.com?subject=" + subject + "&body=" + emailBody;
+              window.location.href = emailLink;
+          }
+      });
+      
+      function validateForm() {
+          var name = document.getElementById("name-input").value;
+          var email = document.getElementById("email-input").value;
+          var phone = document.getElementById("phone-input").value;
+      
+          if (name === "" || email === "" || phone === "") {
+              alert("Please fill in all required fields.");
+              return false;
+          }
+      
+          // Validate email format
+          var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(email)) {
+              alert("Please enter a valid email address.");
+              return false;
+          }
+      
+          return true;
+      }
+      
+      function generateMessage() {
+          var productName = document.getElementById("product-name").value;
+          var productPrice = document.getElementById("product-price-input").value;
+          var name = document.getElementById("name-input").value;
+          var email = document.getElementById("email-input").value;
+          var phone = document.getElementById("phone-input").value;
+          var paymentMethod = document.getElementById("current-card").innerText;
+          var comment = document.getElementById("comment-input").value;
+          var productLink = document.getElementById("product-link-input").value;
+      
+          var message = "_Hello, I want to buy_\n _Product Details:_\n";
+          message += "*Product Title:* " + productName + "\n";
+          message += "*Quantity*: 1\n";
+          message += "*Product Price:* " + productPrice + "\n";
+          message += "*Product Link:* " + productLink + "\n\n";
+          message += "_Billing Details:_ \n"
+          message += "*Name:* " + name + "\n";
+          message += "*Email Address:* " + email + "\n";
+          message += "*Phone Number:* " + phone + "\n";
+          message += "*Comment:* " + comment + "\n";
+          return message;
+      }
+    </script>
+    <script>    
+      var cardDrop = document.getElementById('card-dropdown');
+      var activeDropdown;
+      cardDrop.addEventListener('click',function(){
+      var node;
+      for (var i = 0; i < this.childNodes.length-1; i++)
+      node = this.childNodes[i];
+      if (node.className === 'dropdown-select') {
+        node.classList.add('visible');
+         activeDropdown = node; 
+      };
+      })
+      
+      window.onclick = function(e) {
+      console.log(e.target.tagName)
+      console.log('dropdown');
+      console.log(activeDropdown)
+      if (e.target.tagName === 'LI' && activeDropdown){
+      if (e.target.innerHTML === 'Nagad') {
+        document.getElementById('payment-method-img').src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiocmF89MKpB6vg0RK5GsHPNgpDkvfdUE8GUhPSAySSBx3_DYzFMo2K42jziUGVBG4F1tvr6SyleLzop0E4AJo32EG0WZQcC2f8ebPUl_zUIzO2WNiaI-yb2JTWLT1F7kxMwq7oREjoQrgtc8n_lf60rGoOmrOMorLZZiUv8qUeEeI6f0dvPUiVVbXFbv8E/s1600/fhsNagad.png';
+            activeDropdown.classList.remove('visible');
+        activeDropdown = null;
+        e.target.innerHTML = document.getElementById('current-card').innerHTML;
+        document.getElementById('current-card').innerHTML = 'Nagad';
+      }
+      else if (e.target.innerHTML === 'Rocket') {
+           document.getElementById('payment-method-img').src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSTXS_WGcArZFH7kjJjGlmOlkcLei9Lvb4k7N3D8GFg51TAmrwnr1VbR1AoWxWh87fEL83Ja8dtqLRI1AaZuFcIdFt6zsYLl0_MOukCBNxv6mRBJDycqKk2VnJV7CfT4YvaAPR3LkvT-cF8y1NnSM0mM0RqiShev9SkssMGsrT6lqaUfJJUnmt_9NRd5RB/s1600/fhsRocket.png';
+            activeDropdown.classList.remove('visible');
+        activeDropdown = null;
+        e.target.innerHTML = document.getElementById('current-card').innerHTML;
+        document.getElementById('current-card').innerHTML = 'Rocket';      
+      }
+      else if (e.target.innerHTML === 'Bkash') {
+           document.getElementById('payment-method-img').src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4ncrVmRn3jvKfmIA8twt8BPIrT5-NQONf_QANBAgiRiyV5EIaIn3qSRo2CpGTXHN1gj5Lweok9nFNOCD0f0JxKf0KnTixJ9QHbRh2z7Tazi9v3KpU4RHv_kiHW9QFrC1XaB3HdKq68IpWYsV4euBGRgk8lF7lR1T9-Z4HeqJnagQSViKOyyGj7vON2g0Y/s1600/fhsBkash.png';
+            activeDropdown.classList.remove('visible');
+        activeDropdown = null;
+        e.target.innerHTML = document.getElementById('current-card').innerHTML;
+        document.getElementById('current-card').innerHTML = 'Bkash';
+      }
+      }
+      else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
+      activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      }
+      }
+    </script>
+    <script src="https://fuadhasanshihab.github.io/product/data.js"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const paramValue = urlParams.get('p');
+      
+      if (!paramValue) {
+      document.getElementById('NoProductFound').style.display = 'block';
+      } else if (productsData[paramValue]) {
+      const product = productsData[paramValue];
+      
+      document.getElementById('productImage').src = product.image;
+      document.getElementById('product-Name-sum').innerText = product.name;
+      document.getElementById('product-name').value = product.name;
+      document.getElementById('productCode').innerText = product.code;
+      document.getElementById('productPrice').innerText = product.price;
+      document.getElementById('product-price-input').value = product.price;
+      document.getElementById('singleProductPrice').innerText = product.price;
+      document.getElementById('productDetails').innerText = product.details;
+      document.getElementById('productLink').href = product.link;
+      document.getElementById('product-link-input').value = product.link;
+      
+      
+      document.getElementById('container').style.display = 'block';
+      } else {
+      document.getElementById('InvalidProduct').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
