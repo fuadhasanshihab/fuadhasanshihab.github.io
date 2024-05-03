@@ -187,17 +187,17 @@
           var comment = document.getElementById("comment-input").value;
           var productLink = document.getElementById("product-link-input").value;
       
-          var message = "Hello, I'd like to purchase ";
-          message += "*" + productName + "*\n";
+          var message = "Order Summary:";
+          message += "Product Name:" + productName + "\n";
           message += "Product ID: " + productCode + "\n";
           message += "Quantity: 1\n";
           message += "Price: " + productPrice + "\n";
-          message += "Product Link: " + productLink + "\n\n";
+          message += "Link: " + productLink + "\n\n";
           message += "Comment: " + comment + "\n\n";
           message += "Billing Details:\n"
           message += "Name: " + name + "\n";
-          message += "Email Address: " + email + "\n";
-          message += "Phone Number: " + phone;
+          message += "Email: " + email + "\n";
+          message += "Phone: " + phone;
           return message;
       }
     </script>
