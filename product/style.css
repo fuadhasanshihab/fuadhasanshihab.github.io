@@ -135,7 +135,7 @@ a {
   margin: 0 auto;
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
   border-radius: 0px;
   box-sizing: border-box;
   display: -webkit-box;
@@ -284,10 +284,10 @@ a {
 .checkout-content {
   max-width: 700px;
   margin: 0 auto;
-  padding-top: 32px;
+  padding-top: 0px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 42px;
+  padding-bottom: 0px;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
