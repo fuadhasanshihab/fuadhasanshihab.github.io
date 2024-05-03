@@ -29,12 +29,13 @@
       #google_translate_element select:focus{
       border: none!important;
       }
-      #google_translate_element{
+      #google_translate_element, .skiptranslate{
       text-align:right;
       display: inline-block!important;
       right:0px!important;
       float: right;
       margin-right:0px!important;
+      margin-left:0px!important;
       }
       h2 {
       display: inline-block!important;
