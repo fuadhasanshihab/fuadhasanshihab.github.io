@@ -94,16 +94,16 @@
         </div>
       </div>
     </div>
-    <div id="InvalidProduct" class="order-summary" style="display: none; color: red;">
+    <div id="InvalidProduct" class="order-summary" style="display: none;">
       <br>
-      <h2 class="error">error 404 - invalid product data</h2>
+      <h2 class="error">error 404 - ipd</h2>
       <div class="credit">
         © 2018 - <script type="text/javascript">var y = new Date();document.write(y.getFullYear());</script> Fuad Hasan Shihab. <br>For any inquiries: <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
       </div>
     </div>
     <div id="NoProductFound" class="order-summary" style="display: none;">
       <br>
-      <h2 class="error">error 404 - no product found</h2>
+      <h2 class="error">error 404 - npf</h2>
       <div class="credit">
         © 2018 - <script type="text/javascript">var y = new Date();document.write(y.getFullYear());</script> Fuad Hasan Shihab. <br>For any inquiries: <a href="mailto:contact.shihab1246@gmail.com">contact.shihab1246@gmail.com</a>
       </div>
@@ -186,8 +186,8 @@
           var comment = document.getElementById("comment-input").value;
           var productLink = document.getElementById("product-link-input").value;
       
-          var message = "Hello, I want to buy\n Product Details:\n";
-          message += "Product Title: " + productName + "\n";
+          var message = "Hello, I'd like to purchase ";
+          message += "*" + productName + "*\n";
           message += "Product ID: " + productCode + "\n";
           message += "Quantity: 1\n";
           message += "Price: " + productPrice + "\n";
