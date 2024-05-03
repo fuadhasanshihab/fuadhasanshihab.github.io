@@ -2,8 +2,29 @@
       body,html {
       height:100%;
       margin:0px;
+      top:0!important;
       font-family:lato;
       background: #ffffff;
+      overflow-y: auto;
+      }
+      body > .skiptranslate,.goog-logo-link,.gskiptranslate,.goog-te-gadget span,.goog-te-banner-frame,#goog-gt-tt, .goog-te-balloon-frame,div#goog-gt-{
+      display: none!important;
+      }
+     .goog-te-gadget {
+      color: transparent!important;
+      font-size:0px;
+      }
+     .goog-text-highlight {
+      background: none !important;
+      box-shadow: none !important;
+      }
+      #google_translate_element select{
+      background:#ecf2f6;
+      color:#000;
+      border: none;
+      font-weight:bold;
+      border-radius:3px;
+      padding:8px 12px
       }
       h2 {
       margin-bottom:22px;
