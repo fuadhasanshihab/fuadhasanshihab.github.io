@@ -186,7 +186,7 @@ a:hover{
 
 .order-table td:last-of-type {
   vertical-align: top;
-  padding-left: 32px;
+  padding: 0 0 0 10px;
 }
 
 .line {
