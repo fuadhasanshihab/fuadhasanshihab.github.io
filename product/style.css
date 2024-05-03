@@ -23,16 +23,17 @@
       color:#000;
       border: none!important;
       font-weight:bold;
-      border-radius:0px;
-      padding:0;
+      border-radius:5px;
+      padding:10px;
       }
-      #google_translate_element select:focus{
+      #google_translate_elementt select:focus{
       border: none!important;
       }
       #google_translate_element{
       text-align:right;
       justify-content:right;
       float:right;
+      left:0!important;
       }
       h2 {
       margin-bottom:22px;
