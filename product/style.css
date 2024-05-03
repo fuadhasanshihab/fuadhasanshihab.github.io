@@ -33,12 +33,13 @@ div#goog-gt- {
 }
 
 #google_translate_element select {
-  background: white;
+  background: transparent;
   color: #000;
   border: 0px !important;
-  font-weight: bold;
+  font-weight: normal;
   border-radius: 0px;
-  padding: 0 0 2px -3px;
+  padding: 0 0 2px 0;
+  margin-left: -4px!important;
 }
 
 #google_translate_element select:focus {
