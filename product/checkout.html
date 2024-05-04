@@ -14,7 +14,7 @@
           <div class='order-summary-content'>
             <span><div id='google_translate_element'></div><h2>ORDER SUMMARY</h2></span>
             <div class='line'></div>
-            <a id="productLink" href="">
+            <a id="product-link" href="">
               <table class='order-table'>
                 <tbody>
                   <tr>
@@ -22,8 +22,8 @@
                       <img class='full-width' id="productImage" src=""/>
                     </td>
                     <td>
-                      <span id="product-Name-sum" class='fhs'></span><br>
-                      <span id="productDetails" class='thin small'></span><br>
+                      <span id="product-name-summary" class='fhs'></span><br>
+                      <span id="product-description" class='thin small'></span><br>
                       <span class='thin small'>ID: </span><span class='thin small' id="productCode"></span>
                     </td>
                   </tr>
@@ -269,21 +269,20 @@
       const product = productsData[paramValue];
       
       document.getElementById('productImage').src = product.image;
-      document.getElementById('product-Name-sum').innerText = product.name;
+      document.getElementById('product-name-summary').innerText = product.name;
       document.getElementById('product-name').value = product.name;
       document.getElementById('productCode').innerText = product.code;
       document.getElementById('product-code').value = product.code;
       document.getElementById('productPrice').innerText = product.price;
       document.getElementById('discountText').innerText = product.discountText;
       document.getElementById('discount').innerText = product.discount;
-      document.getElementById('previousPriceText').innerText = product.previousPriceText;
-      document.getElementById('previousPrice').innerHTML = product.previousPrice;
+      document.getElementById('previousPriceText').innerText = product.prePriceText;
+      document.getElementById('previousPrice').innerHTML = product.prePrice;
       document.getElementById('product-price-input').value = product.price;
-      document.getElementById('singleProductPrice').innerText = product.previousPrice;
-      document.getElementById('productDetails').innerText = product.details;
-      document.getElementById('productLink').href = product.link;
+      document.getElementById('singleProductPrice').innerText = product.prePrice;
+      document.getElementById('product-description').innerHTML = product.details;
+      document.getElementById('product-link').href = product.link;
       document.getElementById('product-link-input').value = product.link;
-      
       
       document.getElementById('container').style.display = 'block';
       } else {
