@@ -84,7 +84,7 @@ a {
 
 a:hover{
   font-weight:600;
-  letter-spacing:1.02px;
+  letter-spacing:1.01px;
   transition: 0.2s ease-in-out;
 }
 
@@ -183,6 +183,7 @@ a:hover{
 
 .order-table td:first-of-type {
   width: 35%;
+  padding: 0;
 }
 
 .order-table td:last-of-type {
