@@ -378,7 +378,7 @@ a:hover{
   margin: 52px auto;
   padding: 30px;
   border: 1px solid white;
-  width: 60%;
+  width: calc(60% - 60px);
   max-width: 600px;
 }
 
