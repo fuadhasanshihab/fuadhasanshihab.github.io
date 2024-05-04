@@ -146,7 +146,7 @@
       document.getElementById("submit-email").addEventListener("click", function() {
           if (validateForm()) {
               var message = generateMessage();
-              var subject = "Product Order Data - Fuad Hasan Shihab";
+              var subject = "Order Summary & Billing Details - Fuad Hasan Shihab";
               var emailBody = encodeURIComponent(message);
               var emailLink = "mailto:contact.shihab1246@gmail.com?subject=" + subject + "&body=" + emailBody;
               window.location.href = emailLink;
