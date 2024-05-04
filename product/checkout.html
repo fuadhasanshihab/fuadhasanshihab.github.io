@@ -87,6 +87,7 @@
             <a class='pay-btn' id="submit-facebook" title="send now" style="background:#0568fa;">Order via Facebook</a>
             <a class='pay-btn' id="submit-telegram" title="send now" style="background:#30a3e6;">Order via Telegram</a>
             <a class='pay-btn' id="submit-email" title="send now" style="background:#ea4235;">Order via Email</a>
+            <a class='pay-btn' id="submit-gform" title="send now" style="background:#ea4235;">Order via Google Form</a>
             <a class='pay-btn' id="submit-instagram" title="send now" style="background:#8134af;">Order via Instagram</a>
             <div id="fhs-popup-instagram" class="fhs-popup">
                <div class="fhs-popup-content">
@@ -142,6 +143,14 @@
               var message = generateMessage();
               var telegramLink = "https://t.me/fuadhasanshihab?text=" + encodeURIComponent(message);
               window.open(telegramLink, '_blank');
+          }
+      });
+
+      document.getElementById("submit-gform").addEventListener("click", function() {
+          if (validateForm()) {
+              var message = generateMessage();
+              var gFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSfUNTf_SFj4cVJk_9XwRqv_32ZyNwhSIkX4DHaPi54VGy0wUQ/viewform?usp=pp_url&entry.1822837039=" + encodeURIComponent(message);
+              window.open(gFormLink, '_blank');
           }
       });
       
