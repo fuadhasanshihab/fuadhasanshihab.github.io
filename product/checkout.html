@@ -93,6 +93,7 @@
                  <span class="fhs-close" onclick="closePopup()">&times;</span>
                  <p id="encoded-message"></p>
                  <button onclick="copyToClipboard()">Copy Message</button>
+                 <a href="https://ig.me/m/fuadhasan_shihab" class='pay-btn' title="send now" style="background:#8134af;">Send this message via Instagram</a>
               </div>
              </div>
              <div class="credit">
@@ -167,10 +168,10 @@
       function copyToClipboard() {
     var copyText = document.getElementById("encoded-message").innerText;
     navigator.clipboard.writeText(copyText).then(function() {
-        alert("Copied the message to clipboard!");
+        alert("Copied to clipboard! Now send the message.");
     }).catch(function(error) {
         console.error("Failed to copy: ", error);
-        alert("Failed to copy the message!");
+        alert("Failed to copy the message! Please copy it manually.");
     });
 }
 
