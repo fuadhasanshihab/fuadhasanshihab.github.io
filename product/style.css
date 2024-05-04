@@ -370,7 +370,7 @@ a:hover{
   overflow-x: hidden;
   overflow-y: auto;
   background-color: rgba(255,255,255, 0.1);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
 }
 
 .fhs-popup-content {
@@ -379,8 +379,8 @@ a:hover{
   margin: 52px auto;
   padding: 30px;
   border: 1px solid white;
-  width: calc(100% - 64px);
-  max-width: 700px;
+  width: 80%;
+  max-width: 700px!important;
 }
 
 .fhs-close {
