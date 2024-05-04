@@ -165,13 +165,15 @@
       }
 
       function copyToClipboard() {
-          var copyText = document.getElementById("encoded-message");
-          navigator.clipboard.writeText(copyText.innerText).then(function() {
-              alert("Copied the message to clipboard!");
-          }, function() {
-              alert("Failed to copy the message!");
-          });
-      }
+    var copyText = document.getElementById("encoded-message").innerText;
+    navigator.clipboard.writeText(copyText).then(function() {
+        alert("Copied the message to clipboard!");
+    }).catch(function(error) {
+        console.error("Failed to copy: ", error);
+        alert("Failed to copy the message!");
+    });
+}
+
       
       function validateForm() {
           var name = document.getElementById("name-input").value;
