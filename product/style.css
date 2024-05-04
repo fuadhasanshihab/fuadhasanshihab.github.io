@@ -55,6 +55,7 @@ h2 {
   text-align: left;
   font-weight: 600;
   font-size: 28px !important;
+  line-height: 1!important;
 }
 
 ul {
@@ -83,7 +84,7 @@ a {
 
 a:hover{
   font-weight:600;
-  letter-spacing:1.1px;
+  letter-spacing:1.02px;
   transition: 0.2s ease-in-out;
 }
 
@@ -149,7 +150,7 @@ a:hover{
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 52px;
-  padding-bottom: 100px;
+  padding-bottom: 105px;
   border-radius: 0px;
   box-sizing: border-box;
   display: -webkit-box;
@@ -222,8 +223,8 @@ a:hover{
   margin-top: 3px;
   line-height: 1.5em;
   font-size: 16px;
-  border: none;
-  padding: 5px 10px 5px 10px;
+  border: 1px solid white;
+  padding: 6px 10px 6px 10px;
   color: #000;
   box-sizing: border-box;
   width: 100%;
@@ -342,7 +343,7 @@ a:hover{
 .credit {
   justify-content: center;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 52px;
   font-size: 12px;
   font-weight:300;
   margin-bottom: 0px;
@@ -351,7 +352,7 @@ a:hover{
 .error {
   justify-content: center;
   text-align: center;
-  margin-top: 52px;
+  margin-top: 0px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 0px;
