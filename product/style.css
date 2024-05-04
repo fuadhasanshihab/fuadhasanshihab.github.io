@@ -374,12 +374,13 @@ a:hover{
 }
 
 .fhs-popup-content {
+  overflow-x: hidden;
   background-color: #ecf2f6;
   margin: 52px auto;
   padding: 30px;
   border: 1px solid white;
-  width: calc(60% - 60px);
-  max-width: 600px;
+  width: calc(100% - 64px);
+  max-width: 700px;
 }
 
 .fhs-close {
