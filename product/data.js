@@ -1,3 +1,6 @@
+const validProducts = ["validProduct1", "validProduct2"];
+// Update above
+// validProducts for valid url
 const productsData = {
   '456': {
     name: 'Business Card PLP',
