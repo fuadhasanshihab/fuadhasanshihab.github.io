@@ -1,4 +1,4 @@
-const validProducts = ["validProduct1", "validProduct2"];
+const validProducts = ["456", "demo"];
 // Update above
 // validProducts for valid url
 const productsData = {
