@@ -342,7 +342,6 @@ a:hover{
 }
 
 .credit {
-  justify-content: center;
   text-align: center;
   margin-top: 52px;
   font-size: 12px;
@@ -351,10 +350,10 @@ a:hover{
 }
 
 .error {
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
   margin-top: 0px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 0px;
 }
