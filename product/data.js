@@ -1,6 +1,3 @@
-const validProducts = ["456", "demo"];
-// Update above
-// validProducts for valid url
 const productsData = {
   '456': {
     name: 'Business Card PLP',
@@ -30,18 +27,15 @@ const productsData = {
     form: 'https://docs.google.com/forms/d/e/1FAIpQLScWNZ2hGcTXJs7eF0Ysu5WuZOb904W6zN8Gvnqx6YIcgkazSg/viewform?embedded=true&usp=pp_url&entry.358930372=FHS3749&entry.723714736=DEMO+PRODUCT+NAME&entry.1724040677=500&entry.472063648=https://fuadhasanshihab.blogspot.com/2024/01/demo.html',
     formBank: 'https://docs.google.com/forms/d/e/1FAIpQLSf7NzwO8tSYj9k-lO7iKs3CKy4-m5nEudf5DVlEggk9d15HnQ/viewform?usp=pp_url&entry.358930372=FHS3749&entry.723714736=DEMO+PRODUCT+NAME&entry.1724040677=500&entry.472063648=https://fuadhasanshihab.blogspot.com/2024/01/demo.html'
   },
-  'demo': {
-    name: 'Lorem Ipsum Bangla Typography Combo Pack',
-    details: 'Format: PNG, JPG, SVG',
-    code: 'FHS938',
-    price: '1000', // current main p
-    prePrice: '৳1000',
-    discount: '',
-    prePriceText: 'Subtotal',
-    discountText: '',
-    link: 'https://fuadhasanshihab.blogspot.com/2023/12/demo.html',
-    image: 'https://lh3.googleusercontent.com/B8Ry0wwh_7z_MqH4TwdJOnU2InT8AiX0G3tBf0H2WbgqvQygQvCjTyCrOmHmi213B66H4PdU4R1ZcrUFtLViPJ0gQsMm7-_lL9Sz8pGqC20bXkc9PgtOv_7AOuIenr4-uw=w260',
-    form: 'https://docs.google.com/forms/d/e/1FAIpQLScWNZ2hGcTXJs7eF0Ysu5WuZOb904W6zN8Gvnqx6YIcgkazSg/viewform?embedded=true&usp=pp_url&entry.358930372=FHS3749&entry.723714736=DEMO+PRODUCT+NAME&entry.1724040677=500&entry.472063648=https://fuadhasanshihab.blogspot.com/2024/01/demo.html',
-    formBank: 'https://docs.google.com/forms/d/e/1FAIpQLSf7NzwO8tSYj9k-lO7iKs3CKy4-m5nEudf5DVlEggk9d15HnQ/viewform?usp=pp_url&entry.358930372=FHS3749&entry.723714736=DEMO+PRODUCT+NAME&entry.1724040677=500&entry.472063648=https://fuadhasanshihab.blogspot.com/2024/01/demo.html'
-  },
 };
+
+function updatefhsCounter() {
+      for (const productId in productsData) {
+        const divId = 'fhsCount' + productId;
+        const divElement = document.getElementById(divId);
+        if (divElement) {
+          divElement.innerHTML = productsData[productId].dCount;
+        }
+      }
+    }
+document.addEventListener('DOMContentLoaded', updatefhsCounter);
