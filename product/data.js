@@ -3,7 +3,8 @@ const productsData = {
     name: 'Business Card PLP',
     details: 'Format: PLP',
     code: 'FHS456',
-    price: '50', // current main p
+    price: '50',
+    dCount: '9',
     prePrice: '৳100',
     discount: '-৳50',
     prePriceText: 'Subtotal',
@@ -17,7 +18,8 @@ const productsData = {
     name: 'QR Code Business Card PLP',
     details: 'Format: PLP',
     code: 'FHS466',
-    price: '50', // current main p
+    price: '50',
+    dCount: '2',
     prePrice: '৳100',
     discount: '-৳50',
     prePriceText: 'Subtotal',
